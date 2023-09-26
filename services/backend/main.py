@@ -3,8 +3,18 @@ from pydantic import BaseModel
 from model.model import __version__ as model_version
 from model.model import dummy_predict
 
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:80"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class InputData(BaseModel):
     text: str
