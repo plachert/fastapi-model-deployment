@@ -12,6 +12,8 @@ def call_api(text):
     return annotated_text
 
 
-text = "Warsaw is the capitol of Poland."
-
-annotated_text(call_api(text))
+txt = st.text_area(
+    "Named Entity Recognition",
+    "",
+    )
+annotated_text(call_api(txt))

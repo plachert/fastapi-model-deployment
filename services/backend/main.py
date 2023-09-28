@@ -31,5 +31,3 @@ def read_root():
 def predict(input_data: InputData):
     named_entities = recognize_entities(input_data.text)
     return {"named_entities": named_entities}
-    
-
