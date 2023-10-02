@@ -12,4 +12,5 @@ ner = pipeline("ner", model=model, tokenizer=tokenizer)
 
 
 def recognize_entities(text: str):
-    return ner(text)
+    entities = ner(text)
+    return entities
