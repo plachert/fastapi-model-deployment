@@ -7,7 +7,7 @@ import json
 
 def call_api(text):
     input_data = {"text": text}
-    response = requests.post(url="http://127.0.0.1:5001/predict", data=json.dumps(input_data))
+    response = requests.post(url="http://127.0.0.1:5000/predict", data=json.dumps(input_data))
     annotated_text = annotate_text(text, response.json()["named_entities"])
     return annotated_text
 
