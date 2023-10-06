@@ -1,1 +1,1 @@
-# speaker-diarization
+# FastAPI+Streamlit deployment
