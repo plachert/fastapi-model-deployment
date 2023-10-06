@@ -4,7 +4,7 @@ RUN mkdir app
 WORKDIR /app
 
 ENV PATH="${PATH}:/root/.local/bin"
-ENV PYTHONPATH=./src
+ENV PYTHONPATH=.
 
 COPY requirements.txt .
 RUN pip install --upgrade pip
