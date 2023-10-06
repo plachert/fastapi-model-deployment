@@ -5,5 +5,5 @@ services:
   backend:
     build: ./services/backend
     ports:
-      - 5000:5000
-    command: uvicorn src.main:app --reload --host 0.0.0.0 --port 5000
+      - 5001:5001
+    command: uvicorn src.main:app --reload --host 0.0.0.0 --port 5001
