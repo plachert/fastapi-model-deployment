@@ -14,4 +14,6 @@ services:
     build: ./services/frontend
     ports:
       - 8501:8501
+    volumes:
+      - ./services/frontend:/app
     command: streamlit run src/main.py
